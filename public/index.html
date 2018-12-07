@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CU.3CM60 Jael Castillo</title>
+	<meta name="description" content="Pushbar.js is a tiny javascript plugin for creating sliding drawers in web apps">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Acme|Anton|Archivo+Black|Bowlby+One+SC|Faster+One|Fredoka+One|Hammersmith+One|Londrina+Solid|Patua+One|Rammetto+One|Righteous" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/pushbar.css">
+	<link rel="stylesheet" type="text/css" href="css/upiicsa.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+	<section class="hero is-primary">
+	  <div class="hero-body">
+	    <div class="container">
+	      <h1 class="titlee">
+	        Bienvenido
+	      </h1>
+	      <h2 class="subtitle">
+	        <div class="card_content">
+				<div>
+					<button data-pushbar-target="left" class="button is-primary is-focused" style="font-size: 20px; color:black;">
+						<span class="icon" style ="margin: .1px;" >
+				  		<i class="fas fa-home"></i>
+						</span><p>Menú</p>
+					</button>
+				</div>
+			</div>
+	      </h2>
+	    </div>
+	  </div>
+	</section>
+
+	<div data-pushbar-id="left" class="pushbar from_left pushbar-menu">
+		<div class="btn-close left">
+			<button data-pushbar-close><i class="fas fa-times"></i></button>
+		</div>
+		<div class="title"  style="color:white;">Menú</div>
+		<ul class="menu">
+			<a href="index.html">Inicio</a>
+			<a href="hoja_de_vida.html">Hoja de vida</a>
+			<a href="1er_parcial.html">1er Parcial</a>
+			<a href="2do_parcial.html">2do Parcial</a>
+			<a href="3ro_parcial.html">3er Parcial</a>
+		</ul>
+	</div>
+	<br>
+
+	<section>
+		<div class="card">
+		  <div class="card-content">
+		    <div class="media">
+		        <figure style="width: 20%">
+		         <img class="upiicsa" src="img/upiicsa.png">
+		        </figure>
+		      <div class="media-content">
+		        <h2 class="name">Castillo Chávez Karina Jael</h2>
+		        <p class="info"><b>Boleta:</b> 2016600274<br>
+				<b>Profesor:</b> Rico Aragon Lic. Daniel Oswaldo<br>
+				<b>Unidad de Aprendizaje:</b> Computación Ubicua<br>
+				<b>Secuencia:</b> 3CM61</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</section>
+	<br>
+
+	<footer class="footer has-text-centered">
+		<p>Este Blog personal fue creado como portafolio de evidencias para la materia Computación Ubicua.</p>
+		<p>La infomación presentada en este Blog es meramente informativa.</p>
+	</footer> 
+
+<script type="text/javascript" src="js/pushbar.js"></script>
+<script type="text/javascript" src="js/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script type="text/javascript">
+	var pushbar = new Pushbar({
+		blur:true,
+		overlay:true,
+	});
+</script>
+</body>
+</html>

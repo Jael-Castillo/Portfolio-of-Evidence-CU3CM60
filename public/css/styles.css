@@ -1,0 +1,118 @@
+/*Bienvenido*/
+.titlee{
+
+	font-family: 'Righteous', cursive;
+	font-size: 50px;
+	color:black	;
+
+}
+/*Nombre*/
+.name{
+	font-family: 'Righteous', cursive;
+	font-size: 40px;
+	margin: 20px;
+}
+
+/*Forma de la imagen y Movimiento*/
+.cover img{
+	border-radius: 10%;
+	border: white 6px solid;
+	position: right;
+	bottom: -100px;
+	left: calc(50% - 50px);
+	animation: pulse 1s ease infinite;
+	height: 200px;
+    width: 160px;
+    margin: 20px;
+}
+
+@keyframes pulse{
+	0%{
+		transform: scale(1) translate3d(0,0,0);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1) translate3d(0,0,0); 
+	}
+}
+
+/*Tabla de habilidades*/
+.table_info{
+    font-family: 'Righteous', cursive;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/*Posición de la tabla*/
+.table_position{
+	height: 50%;
+    width: 95%;
+    margin: 30px;
+}
+/*Iconos*/
+.github {
+    text-shadow: 0 2px 3px #24A59D;
+    font-size: 40px;
+    font-family: 'Righteous', cursive;
+}
+.color_github{
+  color : black;
+}
+
+.color_github:hover {
+  color : #24A59D;
+}
+
+.color_email{
+  color : black;
+}
+
+.color_email:hover {
+  color : #24A59D;
+}
+
+/*Footer*/
+.footer{
+	background:#D7DBDD;
+}
+/*Color de la barra de Menú*/
+.pushbar{
+	background: #23B9A0;
+	color:white;
+	padding: 20px;
+}
+/*Butón de cerrar Menú*/
+.pushbar .btn-close.left{
+	text-align: right;
+}
+/*Estilo Butón Cerrar Menú*/
+.pushbar .btn-close button{
+	background: none;
+	color:white;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+}
+/*Pestañas*/
+.pushbar-menu a{
+	display: block;
+	color:white;
+	padding: 20px 0;
+	border-bottom: 1px solid rgba(112,112,112, .60);
+	font-family: 'Righteous', cursive;
+	font-weight: 300;
+	font-size: 18px;
+	transition: .3s ease color;
+}
+/*Sombreo de pestañas*/
+.pushbar-menu a:hover{
+	color : black;
+}
